@@ -11,6 +11,116 @@
 
 html {
   box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px; 
+  margin: 2rem; 
+}
+
+.post__form{
+  display: flex; 
+  flex-direction: column; 
+ 
+
+}
+textarea {
+  width: 4s00px; 
+  resize: vertical; 
+}
+
+form {
+  font-size: 1rem; 
+  padding: 8px; 
+}
+
+.input {
+  width: 300px; 
+}
+
+.invalid{
+  background-color: #fbb; 
+}
+
+
+.post__radio{
+  display: flex; 
+  flex-direction: column; 
+  margin: 1rem; 
+
+}
+
+.radio {
+  margin: 0.5rem; 
+  padding: 5px; 
+}
+
+h3 {
+  margin-top: 32px; 
+  font-size: 1.5rem; 
+}
+
+label {
+  font-size: 1.4rem; 
+}
+
+@media(max-width:600px) {
+  .post__row {
+    flex-direction: column;
+  }
+  .input {
+    height: 40px; 
+  }
+}
+
+.post__row{
+  display: flex; 
+  justify-content: space-between;
+  max-width: 500px; 
+  margin: 1rem;
+
+}
+
+.applicant {
+  flex-direction: column; 
+  
+}
+
+h1 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 3em; 
+}
+
+.email  {
+  color: blue; 
+  text-decoration: underline; 
+}
+
+.applicant :nth-child(5) {
+  margin: 20px 0px; 
+}
+button {
+  background-color: white; 
+  padding: 5px; 
+  border-color: light-grey; 
+  width: 150px;
+  margin: 10px; 
+  border-radius: 5px;  
+}
+.buttons{
+  display: flex;
+  justify-content: space-between;  
+}
+
+button:hover {
+  background-color: #bbb; 
+  transition: background-color 0.3ms ease-in; 
+}
+
+a {
+  text-decoration: none; 
+  color: black; 
+  padding: 5px; 
+  border: 1px solid #888; 
+  border-radius: 5px; 
 }
 
 /* todo útfæra útlit */

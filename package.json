@@ -7,14 +7,19 @@
     "dev": "nodemon app.js",
     "setup": "node setup.js",
     "eslint": "eslint *.js",
-    "test": "npm run eslint"
+    "test": "npm run eslint",
+    "start": "nodemon app.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^6.2.0",
-    "express": "^4.16.4"
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-validator": "^5.3.1",
+    "pg": "^7.8.0",
+    "xss": "^1.0.3"
   },
   "devDependencies": {
     "eslint": "^5.12.1",

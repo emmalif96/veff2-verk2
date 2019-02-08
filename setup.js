@@ -2,7 +2,6 @@ require('dotenv').config();
 
 const fs = require('fs');
 const util = require('util');
-const path = require('path');
 
 const { Client } = require('pg');
 
@@ -30,7 +29,7 @@ async function query(q) {
 async function main() {
   console.info(`Set upp gagnagrunn á ${connectionString}`);
   // droppa töflu ef til
-  await query('DROP TABLE IF EXISTS applications');
+  await query('DROP TABLE IF EXISTS students');
   console.info('Töflu eytt');
 
   // búa til töflu út frá skema
@@ -50,7 +49,6 @@ async function main() {
     console.info('Gögnum bætt við');
   } catch (e) {
     console.error('Villa við að bæta gögnum við:', e.message);
-    return;
   }
 }
 

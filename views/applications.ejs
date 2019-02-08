@@ -1,0 +1,28 @@
+<%- include('header') -%>
+
+<h1>Atvinnuumsóknir</h1>
+
+
+<% datab.forEach((i) => { %>
+    
+    <div class="applicant">
+        <h3><%= i.name %></h3>
+        <p class="email"><%= i.email %></p>
+        <p>Sími: <%= i.phone %></p>
+        <p>Umsókn send: <%= i.created %></p>
+        <p><%= i.texti %></p>
+        <div class="buttons">
+            <% if(!i.processed) { %>
+            <a href="/applications/update?id=<%= i.id %>"> Vinna Umsókn </a>
+            <% } else { %>
+            <p>✓ Umsókn unnin <%= i.updated %></p>
+            <% } %>
+            <a href="/applications/delete?id=<%= i.id %>"> Eyða Umsókn </a>
+         </div>
+    </div>
+<% }) %>    
+
+<%- include('footer') -%>
+                    
+                    
+                
